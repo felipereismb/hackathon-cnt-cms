@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 // Components
 import Header from '~/components/header/Header';
 
-class Pesquisadores extends React.Component {
+class Formularios extends React.Component {
   constructor(props) {
     super(props);
 
@@ -17,11 +17,11 @@ class Pesquisadores extends React.Component {
     return (
       <>
         <Header
-          title="Lista de Pesquisadores Cadastrados"
-          subTitle="Aqui você pode visualizar os pesquisadores cadastrados, criar e alterar pesquisadores"
-          buttonName="Novo Pesquisador"
+          title="Lista de Formulários Cadastrados"
+          subTitle="Aqui você pode visualizar os formulários cadastrados, criar e altera-los"
+          buttonName="Novo Formulário"
           onClickButton={() => {
-            history.push(`/portal/pesquisadores/criar`);
+            history.push(`/portal/formulario/criar`);
           }}
         />
       </>
@@ -33,4 +33,4 @@ const mapStateToProps = (state) => ({});
 
 const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Pesquisadores);
+export default connect(mapStateToProps, mapDispatchToProps)(Formularios);

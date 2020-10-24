@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component} from 'react';
 import { connect } from 'react-redux';
 import cx from 'classnames';
 
@@ -7,7 +7,7 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 import Tabs from 'react-responsive-tabs';
 
 // Tabs From SideBar
-import NavGestor from '../AppNav/Abas/Tabs';
+import Navs from '../AppNav/Abas/Tabs';
 
 import {
   setEnableMobileMenu,
@@ -31,7 +31,7 @@ class AppSidebar extends Component {
     const itemsManager = [
       {
         title: 'Portal CNT',
-        getContent: () => <NavGestor />,
+        getContent: () => <Navs />,
       },
     ];
     items = items.concat(itemsManager);

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 // Components
 import Header from '~/components/header/Header';
 
-class Dashboard extends React.Component {
+class Pesquisador extends React.Component {
   constructor(props) {
     super(props);
 
@@ -14,7 +14,12 @@ class Dashboard extends React.Component {
   render() {
     return (
       <>
-        <Header title="Dashboards" subTitle="Todos Dashboards da aplicação" />
+        <Header
+          title="Novo Pesquisador"
+          onClickBack={() =>
+            this.props.history.push('/portal/pesquisadores/lista')
+          }
+        />
       </>
     );
   }
@@ -24,4 +29,4 @@ const mapStateToProps = (state) => ({});
 
 const mapDispatchToProps = {};
 
-export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);
+export default connect(mapStateToProps, mapDispatchToProps)(Pesquisador);
