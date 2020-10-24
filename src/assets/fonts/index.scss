@@ -1,0 +1,114 @@
+// Linear Icons
+$roboto-font-path: "fonts/roboto";
+$circular-font-path: "fonts/circular";
+
+* {
+    font-family: Roboto, sans-serif;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("#{$roboto-font-path}/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("#{$roboto-font-path}/Roboto-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("#{$roboto-font-path}/Roboto-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("#{$roboto-font-path}/Roboto-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("#{$roboto-font-path}/Roboto-Thin.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("#{$roboto-font-path}/Roboto-ThinItalic.ttf") format("truetype");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("#{$roboto-font-path}/Roboto-Light.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("#{$roboto-font-path}/Roboto-LightItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("#{$roboto-font-path}/Roboto-Medium.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("#{$roboto-font-path}/Roboto-MediumItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+/********Circular*******/
+@font-face {
+    font-family: "Circular Book";
+    src: url("https://db.onlinewebfonts.com/t/02d8f1743ede250c7c9865f1574d7cc6.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: "Circular Book";
+//     src: url("./circular/lineto-circular-pro-mediumItalic.ttf") format("truetype");
+//     font-weight: normal;
+//     font-style: italic;
+// }
+
+// @font-face {
+//     font-family: "Circular Book";
+//     src: url("./circular/lineto-circular-pro-bold.ttf") format("truetype");
+//     font-weight: bold;
+//     font-style: normal;
+// }
+
+
+// @font-face {
+//     font-family: "Circular Book";
+//     src: url("./circular/lineto-circular-pro-book.ttf") format("truetype");
+//     font-weight: 500;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: "Circular Book";
+//     src: url("./circular/lineto-circular-pro-bookItalic.ttf") format("truetype");
+//     font-weight: 500;
+//     font-style: italic;
+// }
