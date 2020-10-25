@@ -62,7 +62,7 @@ class Header extends React.Component {
           <div
             className={`page-title-wrapper ${
               onClickBack ? 'bg-alternate' : 'bg-first-page'
-            } ${mobileSize && 'justify-content-center'} p-3`}
+            } ${mobileSize && 'justify-content-center'} p-3 pb-5`}
           >
             <Row className="w-100 align-items-center m-0">
               {this.props.buttonName && this.props.onClickButton ? (

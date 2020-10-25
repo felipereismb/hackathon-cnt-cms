@@ -107,6 +107,7 @@
     "reactotron-redux-saga": "^4.2.2",
     "reactour": "^1.13.4",
     "reactstrap": "^8.0.0",
+    "recharts": "^1.8.5",
     "redux": "^4.0.1",
     "redux-form": "^8.2.0",
     "redux-logger": "^3.0.6",

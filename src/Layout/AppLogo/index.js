@@ -11,6 +11,8 @@ import {
   setEnableMobileMenuSmall,
 } from '~/store/modules/themeOptions/actions';
 
+import logo from '~/assets/images/logoCNT.png';
+
 class HeaderLogo extends React.Component {
   constructor(props) {
     super(props);
@@ -39,7 +41,7 @@ class HeaderLogo extends React.Component {
             </div>
           </div>
           <div className="logo-src">
-            <img width="auto" height="100%" src="" alt="logo" />
+            <img width="auto" height="100%" src={logo} alt="logo" />
           </div>
         </div>
         <AppMobileMenu />
