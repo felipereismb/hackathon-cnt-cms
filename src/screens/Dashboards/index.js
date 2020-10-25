@@ -18,6 +18,8 @@ import {
 import Header from '~/components/header/Header';
 
 import Slider from 'react-slick';
+import Sticky from 'react-stickynode';
+import { Pie } from 'react-chartjs-2';
 
 // Images
 import rodo1 from '~/assets/images/rodovias/rodo1.jpg';
@@ -100,6 +102,36 @@ const tipoRodoviaFelipe = [
   },
 ];
 
+const conclusaoTrechoKleyson = {
+  labels: ['concluido', 'em progresso', 'para fazer'],
+  datasets: [
+    {
+      data: [4, 1],
+      backgroundColor: ['#268E24', '#CAB923'],
+    },
+  ],
+};
+
+const conclusaoTrechoFelipe = {
+  labels: ['concluido', 'em progresso', 'para fazer'],
+  datasets: [
+    {
+      data: [2, 1, 4],
+      backgroundColor: ['#268E24', '#CAB923', '#686868'],
+    },
+  ],
+};
+
+const conclusaoTrechoPaulo = {
+  labels: ['concluido', 'em progresso', 'para fazer'],
+  datasets: [
+    {
+      data: [1, 1, 5],
+      backgroundColor: ['#268E24', '#CAB923', '#686868'],
+    },
+  ],
+};
+
 class Dashboard extends React.Component {
   constructor(props) {
     super(props);
@@ -110,27 +142,41 @@ class Dashboard extends React.Component {
   render() {
     return (
       <>
-        <Header title="Dashboards" subTitle="Todos Dashboards da aplicação" />
+        <Header title="Dashboards" subTitle="Dados das pesquisas em vigência" />
 
-        <div className="p-3">
+        <div className="p-3" style={{ marginTop: '-40px' }}>
           <Row className="m-0">
             {/* Kleyson */}
             <Col md="6" xl="4">
-              <div className="card mb-3 widget-content bg-night-fade">
-                <div className="widget-content-wrapper text-primary">
-                  <div className="widget-content-left">
-                    <div className="widget-heading">
-                      Pesquisa: Kleyson Morais
+              <Sticky
+                enabled
+                top=".app-header"
+                innerZ="12"
+                activeClass="sticky-active-class"
+              >
+                <div className="card mb-3 widget-content bg-night-fade">
+                  <div className="widget-content-wrapper text-primary">
+                    <div className="widget-content-left">
+                      <div className="widget-heading">
+                        Pesquisa: Kleyson Morais
+                      </div>
+                      <div className="widget-subheading">Trecho 1</div>
                     </div>
-                    <div className="widget-subheading">Trecho 1</div>
-                  </div>
-                  <div className="widget-content-right">
-                    <div className="widget-numbers text-secondary">
-                      <CountUp end={80} duration="10" />%
+                    <div className="widget-content-right">
+                      <div className="widget-numbers text-secondary">
+                        <CountUp end={80} duration="10" />%
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Sticky>
+
+              <Card className="main-card mb-3 pb-3 pt-3">
+                <label className="text-primary pl-3">
+                  Progressão de Km's no trecho
+                </label>
+                <Pie dataKey="value" data={conclusaoTrechoKleyson} />
+              </Card>
 
               <Card className="main-card mb-3">
                 <CardBody className="p-1 pt-2">
@@ -205,21 +251,35 @@ class Dashboard extends React.Component {
 
             {/* Paulo */}
             <Col md="6" xl="4">
-              <div className="card mb-3 widget-content bg-night-fade">
-                <div className="widget-content-wrapper text-primary">
-                  <div className="widget-content-left">
-                    <div className="widget-heading">
-                      Pesquisa: Paulo Atavila
+              <Sticky
+                enabled
+                top=".app-header"
+                innerZ="12"
+                activeClass="sticky-active-class"
+              >
+                <div className="card mb-3 widget-content bg-night-fade">
+                  <div className="widget-content-wrapper text-primary">
+                    <div className="widget-content-left">
+                      <div className="widget-heading">
+                        Pesquisa: Paulo Atavila
+                      </div>
+                      <div className="widget-subheading">Trecho 45</div>
                     </div>
-                    <div className="widget-subheading">Trecho 45</div>
-                  </div>
-                  <div className="widget-content-right">
-                    <div className="widget-numbers text-secondary">
-                      <CountUp end={30} duration="10" />%
+                    <div className="widget-content-right">
+                      <div className="widget-numbers text-secondary">
+                        <CountUp end={30} duration="10" />%
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Sticky>
+
+              <Card className="main-card mb-3 pb-3 pt-3">
+                <label className="text-primary pl-3">
+                  Progressão de Km's no trecho
+                </label>
+                <Pie dataKey="value" data={conclusaoTrechoPaulo} />
+              </Card>
 
               <Card className="main-card mb-3">
                 <CardBody className="p-1 pt-2">
@@ -284,19 +344,35 @@ class Dashboard extends React.Component {
 
             {/* Felipe Reis */}
             <Col md="6" xl="4">
-              <div className="card mb-3 widget-content bg-night-fade">
-                <div className="widget-content-wrapper text-primary">
-                  <div className="widget-content-left">
-                    <div className="widget-heading">Pesquisa: Felipe Reis</div>
-                    <div className="widget-subheading">Trecho 5</div>
-                  </div>
-                  <div className="widget-content-right">
-                    <div className="widget-numbers text-secondary">
-                      <CountUp end={10} duration="0" />%
+              <Sticky
+                enabled
+                top=".app-header"
+                innerZ="12"
+                activeClass="sticky-active-class"
+              >
+                <div className="card mb-3 widget-content bg-night-fade">
+                  <div className="widget-content-wrapper text-primary">
+                    <div className="widget-content-left">
+                      <div className="widget-heading">
+                        Pesquisa: Felipe Reis
+                      </div>
+                      <div className="widget-subheading">Trecho 5</div>
+                    </div>
+                    <div className="widget-content-right">
+                      <div className="widget-numbers text-secondary">
+                        <CountUp end={10} duration="0" />%
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Sticky>
+
+              <Card className="main-card mb-3 pb-3 pt-3">
+                <label className="text-primary pl-3">
+                  Progressão de Km's no trecho
+                </label>
+                <Pie dataKey="value" data={conclusaoTrechoFelipe} />
+              </Card>
 
               <Card className="main-card mb-3">
                 <CardBody className="p-1 pt-2">
