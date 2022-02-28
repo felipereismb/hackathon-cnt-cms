@@ -1,68 +1,37 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+ <img width="50%" alt="logo-cnt" src="https://user-images.githubusercontent.com/17303936/156004588-545d4b67-81a4-426e-9dfb-9e4cbbf4a0aa.png">
+</p>
 
-## Available Scripts
+Big Data CNT: a solução consiste em uma plataforma de informações em tempo real que favorece a tomada de decisões para todo o setor de transporte. A proposta contempla três fases de entregas. A primeira está focada em melhorar a execução da pesquisa por meio de um aplicativo, de um sistema de gestão da pesquisa e da sincronização de dados em nuvem. A segunda contempla conexão com dados externos, para construção de um big data. A terceira volta-se à geração de valor por meio do tratamento de dados, apoiando a tomada de decisão.
 
-In the project directory, you can run:
+![image](https://user-images.githubusercontent.com/17303936/156004799-761d69ff-22a6-4a50-86a2-78b582b1e3ac.png)
 
-### `npm start`
+# Desafio
+[Hackathon CNT](https://cnt.org.br/agencia-cnt/divulgados-vencedores-do-hackathon-do-transporte-cnt/). Identificar as melhores soluções para tornar mais automatizados, ágeis e eficientes os processos de coleta, armazenagem, transmissão, processamento e consumo dos dados levantados em campo pela Pesquisa CNT de Rodovias.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# Participantes
+[Felipe Reis](https://www.linkedin.com/in/felipereismb/)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+[Kleyson Morais](https://www.linkedin.com/in/kleysonmorais/)
 
-### `npm test`
+[Lorraine Patiele](https://www.linkedin.com/in/lorraine-patiele/)
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Paulo Atavila](https://www.linkedin.com/in/pauloatavila/)
 
-### `npm run build`
+# Links
+[Vídeo Pitch](https://youtu.be/ofEGKclh7oA)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Vídeo Demo](https://youtu.be/4Hqw93OS0ss)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+# Scripts
+Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `yarn install ou npm install`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Instala todas as dependências necessárias para execurar o projeto.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### `yarn dev ou npm run dev`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Executa o projeto em modo de desenvolvimento
+Abra [http://localhost:4200](http://localhost:4200) para ver a execução no browser.
