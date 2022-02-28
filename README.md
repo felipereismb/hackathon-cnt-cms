@@ -26,7 +26,6 @@ Big Data CNT: a solução consiste em uma plataforma de informações em tempo r
 # Scripts
 Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
 
-
 ### `yarn install ou npm install`
 
 Instala todas as dependências necessárias para execurar o projeto.
